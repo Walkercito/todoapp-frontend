@@ -12,9 +12,9 @@ def login_view() -> rx.Component:
                     rx.box(
                         rx.center(
                             rx.icon(
-                                tag="circle-check",
-                                size=48,  # Fixed size instead of breakpoints
-                                color=Color.ICON.value
+                                tag = "circle-check",
+                                size = 48,
+                                color = Color.ICON.value
                             )
                         )
                     ),
@@ -23,24 +23,24 @@ def login_view() -> rx.Component:
                             rx.vstack(
                                 rx.heading(
                                     "Todo APP",
-                                    color=TextColor.PRIMARY.value,
-                                    font_size=rx.breakpoints(
-                                        initial="xl",
-                                        sm="2xl",
-                                        lg="3xl"
+                                    color = TextColor.PRIMARY.value,
+                                    font_size = rx.breakpoints(
+                                        initial = "xl",
+                                        sm = "2xl",
+                                        lg = "3xl"
                                     )
                                 ),
                                 rx.text(
                                     "Organiza tus tareas de manera eficiente",
-                                    color=TextColor.SECONDARY.value,
-                                    font_size=rx.breakpoints(
-                                        initial="sm",
-                                        sm="md",
-                                        lg="lg"
+                                    color = TextColor.SECONDARY.value,
+                                    font_size = rx.breakpoints(
+                                        initial = "sm",
+                                        sm = "md",
+                                        lg = "lg"
                                     )
                                 ),
-                                align="center",
-                                spacing="1"
+                                align = "center",
+                                spacing = "1"
                             ),
                         ),
                     ),
@@ -48,55 +48,55 @@ def login_view() -> rx.Component:
                         rx.input(
                             rx.input.slot(
                                 rx.icon(
-                                    tag="mail",
-                                    color=Color.ICON.value
+                                    tag = "mail",
+                                    color = Color.ICON.value
                                 )
                             ),
-                            placeholder="Correo electrónico",
-                            width="100%"
+                            placeholder = "Correo electrónico",
+                            width = "100%"
                         ),
                         rx.input(
                             rx.input.slot(
                                 rx.icon(
-                                    tag="lock",
-                                    color=Color.ICON.value
+                                    tag = "lock",
+                                    color = Color.ICON.value
                                 )
                             ),
-                            placeholder="Contraseña",
-                            type="password",
-                            width="100%"
+                            placeholder = "Contraseña",
+                            type = "password",
+                            width = "100%"
                         ),
                         rx.button(
                             "Iniciar Sesión",
-                            width="100%"
+                            width = "100%"
                         ),
-                        width="100%",
-                        spacing=Size.DEFAULT.value,
-                        padding=rx.breakpoints(
-                            initial="2",
-                            sm="4",
-                            lg="6"
+                        width = "100%",
+                        spacing = Size.DEFAULT.value,
+                        padding = rx.breakpoints(
+                            initial = "2",
+                            sm ="4",
+                            lg = "6"
                         ),
                     ),
-                    spacing=Size.LARGE.value,
-                    align="center",
-                    width="100%"
+                    spacing = Size.LARGE.value,
+                    align = "center",
+                    width = "100%"
                 ),
-                height="auto",
-                width=rx.breakpoints(
-                    initial="100%",
-                    sm="80%",
-                    lg=Size.CARD_WIDTH.value
+                height = "auto",
+                width = rx.breakpoints(
+                    initial = "100%",
+                    sm = "80%",
+                    lg = Size.CARD_WIDTH.value
                 ),
-                border_radius=Size.MEDIUM.value,
-                padding=rx.breakpoints(
-                    initial="4",
-                    sm="8",
-                    lg=Size.EXTRA_LARGE.value
+                border_radius = Size.MEDIUM.value,
+                padding = rx.breakpoints(
+                    initial = "4",
+                    sm = "8",
+                    lg = Size.EXTRA_LARGE.value
                 ),
             )
    
      ),
-        center_content=True,
-        size="2"
+        center_content = True,
+        size = "2"
     )

@@ -14,20 +14,20 @@ def index() -> rx.Component:
         rx.vstack(
             rx.center(
                 login_page(),
-                width="100%",
-                height="100vh",
-                align="center",
-                justify="center",
+                width = "100%",
+                height = "100vh",
+                align = "center",
+                justify = "center",
             ),
-            width="100%",
-            align="center",
-            justify="center",
+            width = "100%",
+            align = "center",
+            justify = "center",
         ),
-        align="center",
-        justify="center",
+        align = "center",
+        justify = "center",
         bg = Color.BACKGROUND.value,
-        width="100%",
-        height="100vh",  
+        width = "100%",
+        height = "100vh",  
     )
 
 
